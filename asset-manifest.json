@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/journal-react/static/css/main.f0d03181.chunk.css",
+    "main.js": "/journal-react/static/js/main.d3127cf1.chunk.js",
+    "main.js.map": "/journal-react/static/js/main.d3127cf1.chunk.js.map",
+    "runtime-main.js": "/journal-react/static/js/runtime-main.3d04efdd.js",
+    "runtime-main.js.map": "/journal-react/static/js/runtime-main.3d04efdd.js.map",
+    "static/js/2.c13284dd.chunk.js": "/journal-react/static/js/2.c13284dd.chunk.js",
+    "static/js/2.c13284dd.chunk.js.map": "/journal-react/static/js/2.c13284dd.chunk.js.map",
+    "index.html": "/journal-react/index.html",
+    "precache-manifest.edc3c0aa36ff00c686704419bcf24f9a.js": "/journal-react/precache-manifest.edc3c0aa36ff00c686704419bcf24f9a.js",
+    "service-worker.js": "/journal-react/service-worker.js",
+    "static/css/main.f0d03181.chunk.css.map": "/journal-react/static/css/main.f0d03181.chunk.css.map",
+    "static/js/2.c13284dd.chunk.js.LICENSE.txt": "/journal-react/static/js/2.c13284dd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d04efdd.js",
+    "static/js/2.c13284dd.chunk.js",
+    "static/css/main.f0d03181.chunk.css",
+    "static/js/main.d3127cf1.chunk.js"
+  ]
+}
