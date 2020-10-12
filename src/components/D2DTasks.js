@@ -27,7 +27,7 @@ const D2DTasks = (props) => {
     useEffect(() => {
         loadRequestedTasks({ task_type: "D2D" }, setAllD2DTasks);
         ifSundayRedirectForReview();  
-    }, []);
+    }, [allD2Dtasks]);
 
 
     return (

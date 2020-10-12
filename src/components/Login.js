@@ -18,12 +18,8 @@ const Login = (props) => {
         console.log(password);
         axios.post(LOGIN_AUTH_URL, request)
         .then(res => {
-            console.log(res.data);
             localStorage.setItem("jwt", res.data.jwt)
-            console.log(props.history.location);
-            props.history.push("/D2D", {
-              params : localStorage.getItem("jwt")
-            });
+            props.history.push("/D2D");
         })
         .catch(err => {
             setIsError404(true)

@@ -33,13 +33,13 @@ const onDataFail = () => {
 export const loadRequestedTasks = (
   request,
   setRequestedTasks,
-  callback = null
+  callback = null,
 ) => {
-  axios
-    .get(USER_TASKS_URL, {
+    axios.get(USER_TASKS_URL, {
       params: request,
     })
     .then((res) => {
+      console.log(checkAuth());
       if (checkAuth()) {
         setRequestedTasks([...res.data["requested_task_set"]]);
       }
