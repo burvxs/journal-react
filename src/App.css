@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+* {
+  color : white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  height : 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin : 0;
+  background: linear-gradient(#828181, #555454);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height : 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.taskContainer {
+  display: grid;
+  grid-column: auto;
+  grid-template-columns:  50px 300px 300px 200px;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  column-gap: 30px;
+  background: #696969;
+  width: 55%;
+}
+
+.statSheet {
+  bottom: 50px;
+  right: 50px;
+  position: absolute;
+}
+
+.statSheet > ul > li {
+  list-style-type: none;
+  padding : 6px;
+}
+
+.itemWrapper {
+  display: contents;
+}
+.itemWrapper > .completed {
+  background: grey;
+}
+
+.itemWrapper > .item {
+  height : 40px;
+  width : 300px;
+  padding-top : 10px;
+}
+
+input[type=text], input[type=number], input[type=password] {
+  height : 30px;
+  border-radius: 3px;
   color: white;
+  background-color: #696969;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+input:focus {
+  outline: none !important;
+  border: 1px solid #414141;;
+  box-shadow: 0 0 10px #25282b;
 }
 
-.App-link {
-  color: #61dafb;
+
+::placeholder {
+  color: white;
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.taskForm {
+  display: contents;
+}
+
+.taskContainer{
+  padding-top: 1%;
+  margin-left: 20%;
+}
+
+#columnHeaders {
+  display: contents;
+}
+
+.listWrapper {
+  position: absolute;
+  background: #696969;
+  top : 82px;
+  width : 300px;
+}
+
+#spacer {
+  position: relative;
+  margin-left: 20%;
+  height: 53.5px;
+}
+
+.listWrapper li {
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
+
+.listWrapper li:hover {
+  cursor: pointer;
+  color : black;
+}
+
+#currentDate{
+  position: relative;
+  margin-left: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.categoryList > ul {
+  list-style-type: none;
+}
+
+.categoryList {
+  margin-left: 20px;
+}
+
+.taskListWrapper {
+  display: contents;
+}
+
+.contentWrapper {
+  display: contents;
+  grid-template-rows: 10px;
+}
+
+.sublistWrapper {
+  margin-left : 20px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sublistWrapper > ul{
+  list-style-type: none;
+}
+nav {
+  padding-top : 10px;
+}
+nav > .navItem {
+  padding : 30px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navItem:hover{
+ color : black;
 }
